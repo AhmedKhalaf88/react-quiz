@@ -90,7 +90,9 @@ function QuizProvider({ children }) {
   );
 
   useEffect(function () {
-    fetch("https://my-json-server.typicode.com/Ahmedkhalaf88/api/questions")
+    fetch(
+      "https://my-json-server.typicode.com/Ahmedkhalaf88/react-quiz/questions"
+    )
       .then((res) => res.json())
       .then((data) =>
         dispatch({
